@@ -5,7 +5,7 @@ code,input{font-family:S}
 li::before{z-index:-1;position:absolute;left:2em}
 #a li::before{content:"˃"}
 #d li::before{content:"˅"}
-#x{border-collapse:collapse;counter-reset:n}
+#x{border-collapse:collapse;counter-reset:n l}
 td{height:2.5em;width:2.5em;border:1px solid currentcolor;padding:0}
 input{width:100%;height:100%;text-align:center;margin:0;padding:0;border:none;font-size:x-large;background:none;cursor:pointer;border-top-left-radius:1.5em;caret-color:transparent}
 input::-moz-selection,input::selection{color:currentcolor;background:none}
@@ -13,4 +13,6 @@ input:focus{background:#07f7}
 .b{background:#222}
 .b input{cursor:not-allowed}
 .b input:focus{background:#f007}
-.n::before{counter-increment:n;content:counter(n);position:relative;display:block;left:0.25em;height:0;font-size:xx-small;z-index:-1}
+.n::before,.l::before{position:relative;display:block;left:0.25em;height:0;font-size:xx-small;z-index:-1}
+.n::before{counter-increment:n;content:counter(n)}
+.l::before{counter-increment:l;content:counter(l,lower-alpha)}
