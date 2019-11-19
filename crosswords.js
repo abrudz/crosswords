@@ -1,7 +1,7 @@
 D=document;
 $=q=>[...D.querySelectorAll(q)];
-I=t=>{n=0;
- x.innerHTML=x.getAttribute("data-c").replace(new RegExp(".{"+t+"}","gi"),r=>"<tr>"+[...r].map(c=>"<td class="+c+"><input id=c"+(n++)+" onfocus=this.select() onkeyup=this.select() onclick=this.select() onchange=this.select() oninput=;C() value=' ' maxlength="+(c==="b"?"0' readonly":"1")+" /></td>").join("")+"</tr>");
+I=t=>{
+ (x=$("table")[n=0]).innerHTML=x.getAttribute("data-c").replace(new RegExp(".{"+t+"}","gi"),r=>"<tr>"+[...r].map(c=>"<td class="+c+"><input id=c"+(n++)+" onfocus=this.select() onkeyup=this.select() onclick=this.select() onchange=this.select() oninput=;C() value=' ' maxlength="+(c==="b"?"0' readonly":"1")+" /></td>").join("")+"</tr>");
  D.addEventListener("keydown",e=>D.getElementById("c"+((i=+D.activeElement.id.slice(1))+((k=e.key)
   =="ArrowLeft"?(t*!(i%t))-1:
  k=="ArrowRight"?1-t*(!((i+1)%t)):
