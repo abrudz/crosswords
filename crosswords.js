@@ -15,3 +15,6 @@ I=t=>{
  $("[data-l]").map(e=>{e.value=e.getAttribute("data-l").charCodeAt()-96;e.classList.add("l")});
  (q=$(".n input,.e input"))[0].focus()}
 C=_=>{if((new RegExp(x.getAttribute("data-a"))).test(q.map(i=>i.value).join("")))alert("That's correct!")}
+F=_=>{e=$(".e input,.n input");
+ c=$("table")[0].getAttribute("data-a").replace(/\\(.)/g,"$1").replace(/\[([^\]])[^\]]+]/g,"$1");
+ for(i=0;i<e.length;i++){e[i].value=c[i]}}
