@@ -11,7 +11,7 @@ input::-moz-selection,input::selection{color:currentcolor;background:none}
 input:focus{background:#07f7}
 td.b input{cursor:not-allowed}
 td.b input:focus{background:#f007}
-input,code{font-family:S}
+input,code{font-family:S;white-space:pre}
 ol::before{margin-left:-1.5em;font-size:1.5em;font-weight:bold}
 ol:first-of-type::before {content: "Across"}
 ol:last-of-type::before {content: "Down"}
